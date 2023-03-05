@@ -6,11 +6,11 @@ body {
   background: #181818;
   color: #fff;
   line-height: 1.6;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   padding: 0 1.5em;
 }
 
-.content { 
+.content {
   margin-left: auto;
   margin-right: auto;
   padding: 1.5em;
@@ -27,11 +27,11 @@ ul {
 }
 
 .brand span {
-  color: #303F9F;
+  color: #303f9f;
 }
 
 .contact-wrapper {
-  box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
 }
 
 .contact-wrapper > * {
@@ -64,16 +64,16 @@ ul {
 .contact-form form input,
 .contact-form form textarea {
   width: 100%;
-  padding: .7em;
+  padding: 0.7em;
   border: none;
   background: none;
   outline: 0;
   color: #fff;
-  border-bottom: 1px solid #3F51B5;
+  border-bottom: 1px solid #3f51b5;
 }
 
 .contact-form form button {
-  background: #303F9F;
+  background: #303f9f;
   border: 0;
   text-transform: uppercase;
   padding: 1em;
@@ -81,7 +81,7 @@ ul {
 
 .contact-form form button:hover,
 .contact-form form button:focus {
-  background: #3F51B5;
+  background: #3f51b5;
   color: #fff;
   transition: background-color 1s ease-out;
   outline: 0;
@@ -91,7 +91,34 @@ ul {
   background: #000;
 }
 
-.contact-info h4, .contact-info ul, .contact-info p {
+.contact-info h4,
+.contact-info ul,
+.contact-info p {
   text-align: center;
   margin: 0 0 1rem 0;
+}
+
+@media (min-width: 900px) {
+  body {
+    padding: 0 4em;
+  }
+  .content {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+  }
+
+  .contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  .contact-wrapper > * {
+    padding: 2em;
+  }
+  .contact-info h4,
+  .contact-info ul,
+  .contact-info p {
+    text-align: left;
+  }
 }
